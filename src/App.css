@@ -1,0 +1,16 @@
+.App {
+  padding: 0px 100px 0px 100px;
+  color: var(--text-color);
+}
+
+.home-message {
+  width: 30%;
+}
+
+p {
+  color: var(--subtext-color);
+}
+
+span {
+  color: var(--specialtext-color);
+}
