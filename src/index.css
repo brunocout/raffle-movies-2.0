@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -10,6 +15,7 @@ body {
   background-size: 100%;
   background-position: 50% -160px;
   background-repeat: repeat-y;
+  font-size: 1.6rem;
 }
 
 code {
