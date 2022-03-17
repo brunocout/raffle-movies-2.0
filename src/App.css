@@ -1,9 +1,21 @@
 .App {
-  padding: 0px 100px 0px 100px;
   color: var(--text-color);
 }
 
+.main {
+  margin-top: 100px;
+}
+
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home-message {
+  min-width: 200px;
   width: 30%;
 }
 

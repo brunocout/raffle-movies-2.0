@@ -1,3 +1,17 @@
 .footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     background-color: var(--grey-color);
+    bottom: 0;
+    font-size: clamp(1em, 2vw, 1rem);
+    color: white;
+}
+
+@media (max-height: 730px) {
+    .footer {
+        display: none;
+    }
 }
