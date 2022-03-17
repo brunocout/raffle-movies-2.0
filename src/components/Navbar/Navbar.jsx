@@ -1,3 +1,4 @@
+import { RiArrowRightLine } from "react-icons/ri";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
                 </div>
                 <div className="menu-container">
                     <ul className='menu'>
-                        <li>Suggest me</li>
+                        <li>Suggest me <RiArrowRightLine/></li>
                     </ul>
                 </div>
             </div>

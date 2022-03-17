@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
+import Raffle from './components/Raffle/Raffle';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
               <h1>Raffle Movies</h1>
               <p>Based on a list of movies from 2 to 10, I, <span>Raffle Movies</span> will draw a suggestion for you, who are undecided on which movie or series to watch 😊</p>
           </div>
+          <Raffle />
         </main>
         <Footer />
     </div>
