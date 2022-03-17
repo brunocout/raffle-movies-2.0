@@ -16,8 +16,10 @@
 }
 
 .home-message {
+  margin-top: 200px;
   min-width: 200px;
   width: 30%;
+  font-size: 1.3em;
 }
 
 p {
