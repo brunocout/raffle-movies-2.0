@@ -1,4 +1,5 @@
 import { RiAddFill } from 'react-icons/ri';
+import Button from '../Button/Button';
 import './Raffle.css'
 
 const Raffle = () => {
@@ -8,10 +9,10 @@ const Raffle = () => {
                 <h1>Choose the movies</h1>
                 <p>Add movies or tv shows</p>
                 <div className='input-container'>
-                    <button><RiAddFill /></button>
+                    <Button component='button' className='add-button'><RiAddFill /></Button>
                     <input type="text" name='search' placeholder='eg. Spider Man' />
                 </div>
-                <button className='raffle-button'>Raffle now</button>
+                <Button component='button' className='raffle-button'>Raffle now</Button>
             </div>
             <div className="movies-sprites">
                 Let me raffle a movie 😉 

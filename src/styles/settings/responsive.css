@@ -1,0 +1,61 @@
+@media (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  html {
+    font-size: 25%;
+  }
+
+  .main {
+    margin-top: 80px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .raffle {
+    flex-direction: column;
+    width: 220px;
+    height: 400px;
+  }
+
+  .raffle-container {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .input-container {
+    margin: auto;
+    height: 10px;
+  }
+
+  .raffle-button {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-container input {
+    font-size: 2rem;
+  }
+
+  .home-message {
+    margin: auto;
+    text-align: center;
+  }
+
+  .nav {
+    font-size: 2.5rem;
+  }
+
+  .nav img {
+    width: 30px;
+  }
+}

@@ -1,4 +1,5 @@
 import { RiArrowRightLine } from "react-icons/ri";
+import Button from "../Button/Button";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -6,11 +7,13 @@ const Navbar = () => {
         <nav className="nav">
             <div className='navbar container'>
                 <div className='logo'>
-                    <img src="../../../assets/images/logo.png" alt="" />
+                    <Button href="/"><img src="../../../assets/images/logo.png"/></Button>
                 </div>
                 <div className="menu-container">
                     <ul className='menu'>
-                        <li>Suggest me <RiArrowRightLine/></li>
+                        <li>
+                            Suggest me <RiArrowRightLine/>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,23 @@
+.button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.button.raffle-button {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: var(--tertary-color);
+    padding: 10px;
+    width:100%;
+    min-width: 210px;
+    max-width: 270px;
+    border-radius: 30px;
+}
+
+.button.add-button {
+    font-size: 2.5rem;
+    color: var(--specialtext-color);
+}

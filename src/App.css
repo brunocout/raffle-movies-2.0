@@ -26,42 +26,6 @@ p {
 
 span {
   color: var(--specialtext-color);
+  font-weight: bold;
 }
 
-@media (max-width: 990px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 700px) {
-
-  html {
-    font-size: 25%;
-  }
-
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .raffle {
-    flex-direction: column;
-    width: 220px;
-    height: 500px;
-  }
-
-  .raffle-container {
-    text-align: center;
-  }
-
-  .input-container {
-    margin: auto;
-  }
-
-  .home-message {
-    margin: auto;
-    text-align: center;
-  }
-
-}
