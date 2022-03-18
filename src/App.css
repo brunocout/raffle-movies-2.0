@@ -3,8 +3,7 @@
 }
 
 .main {
-  margin-top: 100px;
-  display: flex;
+  margin-top: 200px;
 }
 
 .container {
@@ -16,10 +15,9 @@
 }
 
 .home-message {
-  margin-top: 200px;
   min-width: 200px;
-  width: 30%;
-  font-size: 2rem;
+  width: 80%;
+  font-size: 1.5rem;
 }
 
 p {
@@ -28,4 +26,42 @@ p {
 
 span {
   color: var(--specialtext-color);
+}
+
+@media (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  html {
+    font-size: 25%;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .raffle {
+    flex-direction: column;
+    width: 220px;
+    height: 500px;
+  }
+
+  .raffle-container {
+    text-align: center;
+  }
+
+  .input-container {
+    margin: auto;
+  }
+
+  .home-message {
+    margin: auto;
+    text-align: center;
+  }
+
 }

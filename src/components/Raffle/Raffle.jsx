@@ -14,7 +14,7 @@ const Raffle = () => {
                 <button className='raffle-button'>Raffle now</button>
             </div>
             <div className="movies-sprites">
-                
+                Let me raffle a movie 😉 
             </div>
         </div>
      );

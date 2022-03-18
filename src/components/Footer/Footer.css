@@ -9,9 +9,3 @@
     font-size: 1.6rem;
     color: white;
 }
-
-@media (max-height: 730px) {
-    .footer {
-        display: none;
-    }
-}
