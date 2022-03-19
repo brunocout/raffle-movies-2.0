@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -12,7 +13,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    margin-left: 25px;
+    font-size: 1.5rem;
 }
 
 .input-container {
@@ -34,4 +36,10 @@
     width: 80%;
     margin-left: 10px;
     border: none;
+}
+
+.movies-sprites {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
