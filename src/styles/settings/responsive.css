@@ -72,4 +72,11 @@
     width: 120%;
   }
 
+  .bar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 2px;
+    width: 250px;
+  }
+
 }

@@ -25,8 +25,6 @@ const Raffle = () => {
         })
     }
 
-    console.log(dataMovie)
-
     return ( 
         <div className="raffle">
             <div className="raffle-container">
@@ -38,6 +36,7 @@ const Raffle = () => {
                 </div>
                 <Button component='button' className='raffle-button'>Raffle now</Button>
             </div>
+            <div className="bar"></div>
             <div className="movies-sprites">
                 {dataMovie.map(item => <Movies data={API_IMG + item.poster_path}/>)}
             </div>

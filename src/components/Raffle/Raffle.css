@@ -13,8 +13,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 25px;
-    font-size: 1.5rem;
+    margin-left: 10px;
+    font-size: 1.3rem;
 }
 
 .input-container {
@@ -42,4 +42,12 @@
     width: 55%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.bar {
+    background-color: var(--border-color);
+    height: 300px;
+    width: 2px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
