@@ -1,5 +1,6 @@
 .App {
   color: var(--text-color);
+  text-shadow: 2px 2px 2px var(--shadowtext-color);
 }
 
 .main {
@@ -27,8 +28,13 @@
   font-size: 1.5rem;
 }
 
+h1 {
+  margin: 0;
+}
+
 p {
   color: var(--subtext-color);
+  margin: 10px auto;
 }
 
 span {

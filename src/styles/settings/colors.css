@@ -15,6 +15,7 @@
     --text-color: #EBEEF5;
     --subtext-color: #8E95A9;
     --specialtext-color: #9C92F8;
+    --shadowtext-color: rgba(0, 0, 0, 0.1);
     /* Components Color */
     --raffle-color: #1a213356;
     --border-color: #2a2f3ad2;

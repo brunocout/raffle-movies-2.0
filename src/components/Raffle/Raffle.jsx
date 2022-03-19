@@ -28,7 +28,7 @@ const Raffle = () => {
     return ( 
         <div className="raffle">
             <div className="raffle-container">
-                <h1>Choose the movies</h1>
+                <h1>Choose the Movies</h1>
                 <p>Add movies or tv shows</p>
                 <div className='input-container'>
                     <Button component='button' className='add-button' onClick={handleOnclick}><RiAddFill /></Button>
@@ -37,9 +37,11 @@ const Raffle = () => {
                 <Button component='button' className='raffle-button'>Raffle now</Button>
             </div>
             <div className="bar"></div>
-            <div className="movies-sprites">
-                {dataMovie.map(item => <Movies data={API_IMG + item.poster_path}/>)}
-            </div>
+            {dataMovie.length == 0 ? 
+            <p>Add movies to the list... Lets draw. 😉</p> :
+                <div className="movies-sprites"> {dataMovie.map(item => <Movies data={API_IMG + item.poster_path}/>)}
+                </div>
+            }
         </div>
      );
 }
