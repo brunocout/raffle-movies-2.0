@@ -1,0 +1,51 @@
+.raffled-container {
+    width: 100%;
+    display: flex;
+}
+
+.raffled-sprite {
+    width: 40%;
+}
+
+.raffled-sprite img {
+    max-width: 200px;
+    width: 80%;
+}
+
+.raffled-info {
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.raffled-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+.date {
+    background-color: var(--vote-color);
+    color: var(--success-color);
+}
+
+.vote {
+    background-color: var(--vote-color);
+    color: var(--warning-color);
+}
+
+.ri-line {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}

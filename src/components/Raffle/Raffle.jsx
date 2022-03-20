@@ -1,47 +1,62 @@
 import React, { useState } from 'react';
 import { RiAddFill } from 'react-icons/ri';
+import requestApi from '../../api/requestApi';
 import Button from '../Button/Button';
-import Movies from '../Movies/Movies'
-import { API_BASE, API_KEY, API_LANGUAGE, API_IMG } from '../../services/api/tmdb'
+import MovieSprites from '../Movie/MovieSprites/MovieSprites'
+import RaffledMovie from '../Movie/RaffledMovie/RaffledMovie';
+import { API_IMG } from '../../api/tmdb'
 import './Raffle.css'
 
 const Raffle = () => {
 
     const [dataMovie, setDataMovie] = useState([])
     const [searchTerm, setSearchTerm] = useState('')
-    const [nameMovie, setNameMovie] = useState('')
+    const [nameMovie, setNameMovie] = useState([])
+    const [raffledData, setRaffledData] = useState([])
 
-    const handleOnclick = () => {
-       requestMovie(searchTerm)
-       setNameMovie([...nameMovie, searchTerm])
-       setSearchTerm('')
+    const handleOnClick = () => {
+        requestApi(searchTerm).then(value => {
+            setDataMovie([...dataMovie, value.results[0]])
+        })
+        setNameMovie([...nameMovie, searchTerm])
+        setSearchTerm('')
     }
 
-    const requestMovie = async (movie) => {
-        fetch(`${API_BASE}/search/movie?api_key=${API_KEY}&language=${API_LANGUAGE}&query=${movie}`).then(res => res.json()).then(data => {
-            setDataMovie([...dataMovie, data.results[0]])
-        }).catch(err => {
-            console.log(err)
+    const handleRaffledMovie = () => {
+        chooseRaffledMovie()
+    }
+
+    const chooseRaffledMovie = () => {
+        const luckyNumber = Math.floor(Math.random() * (nameMovie.length))
+        requestApi(nameMovie[luckyNumber]).then(value => {
+            setRaffledData(value.results[0])
         })
     }
 
-    return ( 
-        <div className="raffle">
-            <div className="raffle-container">
-                <h1>Choose the Movies</h1>
-                <p>Add movies or tv shows</p>
-                <div className='input-container'>
-                    <Button component='button' className='add-button' onClick={handleOnclick}><RiAddFill /></Button>
-                    <input type="text" name='search' placeholder='eg. Spider Man' onChange={e => (setSearchTerm(e.target.value))} value={searchTerm}/>
+    console.log(raffledData)
+
+    return (
+        <div className="raffle-content">
+            <div className='home-message'>
+                    <h1>Raffle Movies: What Should i Watch?</h1>
+                    <p>Based on a list of movies from 2 to 10, I, <span>Raffle Movies</span> will draw a suggestion for you, who are undecided on which movie or series to watch 😊</p>
+                </div> 
+            <div className="raffle">
+                <div className="raffle-container">
+                    <h1>Choose the Movies</h1>
+                    <p>Add movies or tv shows</p>
+                    <div className='input-container'>
+                        <Button component='button' className='add-button' onClick={handleOnClick}><RiAddFill /></Button>
+                        <input type="text" name='search' placeholder='eg. Spider Man' onChange={e => (setSearchTerm(e.target.value))} value={searchTerm}/>
+                    </div>
+                    <Button component='button' className='raffle-button' onClick={handleRaffledMovie}>Raffle now</Button>
                 </div>
-                <Button component='button' className='raffle-button'>Raffle now</Button>
+                <div className="bar"></div>
+                {raffledData.length != 0 ? <RaffledMovie data={raffledData} img_url={API_IMG} /> : dataMovie.length != 0 ? <div className="movies-container">
+                    {dataMovie.map(item => <MovieSprites data={API_IMG + item.poster_path}/>)}
+                </div> : <p>Add movies to the list... Lets draw. 😉</p>
+                }
             </div>
-            <div className="bar"></div>
-            {dataMovie.length == 0 ? 
-            <p>Add movies to the list... Lets draw. 😉</p> :
-                <div className="movies-sprites"> {dataMovie.map(item => <Movies data={API_IMG + item.poster_path}/>)}
-                </div>
-            }
         </div>
      );
 }

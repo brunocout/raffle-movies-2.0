@@ -38,12 +38,6 @@
     border: none;
 }
 
-.movies-sprites {
-    width: 55%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
 .bar {
     background-color: var(--border-color);
     height: 300px;
@@ -51,3 +45,30 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.movies-container {
+  max-width: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.home-message {
+    min-width: 200px;
+    width: 55%;
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  p {
+    color: var(--subtext-color);
+    margin: 10px auto;
+  }
+  
+  span {
+    color: var(--specialtext-color);
+    font-weight: bold;
+  }
