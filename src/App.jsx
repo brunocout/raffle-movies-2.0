@@ -1,25 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css'
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Raffle from './components/Raffle/Raffle';
-import Suggest from './components/Suggest/Suggest';
+import Routes from './routes';
 
 
 function App() {
 
   return (
-    <div className="App">
-        <Navbar />
-        <main className='main container'>
-          <div className='home-banner'>
-            <img src="../assets/images/banner.png"/>
-          </div>
-          <Raffle />
-        </main>
-        <Suggest />
-        <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes />
+      </div>
+    </Router>
   )
 }
 

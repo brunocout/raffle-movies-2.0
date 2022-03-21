@@ -12,7 +12,7 @@ const Navbar = () => {
                 <div className="menu-container">
                     <ul className='menu'>
                         <li>
-                            Suggest me <RiArrowRightLine/>
+                            <Button href="/suggest" className="navlink">Suggest me <RiArrowRightLine/></Button>
                         </li>
                     </ul>
                 </div>

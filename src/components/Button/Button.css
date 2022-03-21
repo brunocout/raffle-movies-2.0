@@ -36,8 +36,8 @@
     background-color: var(--button-color);
     padding: 10px;
     width: 100%;
-    min-width: 210px;
-    max-width: 500px;
+    min-width: 280px;
+    max-width: 280px;
     border-radius: 10px;
     transition: 200ms all ease-in-out;
 }
@@ -45,4 +45,15 @@
 .form-button:hover {
     background-color: var(--hover-color);
     color: var(--hovertext-color);
+}
+
+.navlink {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+}
+
+.navlink:hover {
+    color: var(--specialtext-color);
 }
