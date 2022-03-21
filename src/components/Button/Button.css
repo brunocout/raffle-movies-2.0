@@ -11,7 +11,7 @@
     font-weight: bold;
     background-color: var(--button-color);
     padding: 10px;
-    width:100%;
+    width: 100%;
     min-width: 210px;
     max-width: 270px;
     border-radius: 30px;
@@ -26,4 +26,23 @@
 .add-button {
     font-size: 2.5rem;
     color: var(--specialtext-color);
+}
+
+.form-button {
+    margin-top: 20px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: var(--button-color);
+    padding: 10px;
+    width: 100%;
+    min-width: 210px;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: 200ms all ease-in-out;
+}
+
+.form-button:hover {
+    background-color: var(--hover-color);
+    color: var(--hovertext-color);
 }

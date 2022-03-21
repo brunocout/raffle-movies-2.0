@@ -1,0 +1,45 @@
+.suggest-container {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form input {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+    outline: none;
+}
+
+.form textarea {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
+    outline: none;
+}
+

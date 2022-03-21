@@ -3,6 +3,7 @@ import './App.css'
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import Raffle from './components/Raffle/Raffle';
+import Suggest from './components/Suggest/Suggest';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           </div>
           <Raffle />
         </main>
+        <Suggest />
         <Footer />
     </div>
   )
