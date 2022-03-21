@@ -1,49 +1,54 @@
 .raffle {
-    background-color: var(--raffle-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--raffle-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .raffle-container {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 10px;
-    font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 1.3rem;
 }
 
 .input-container {
-    margin: auto;
-    background-color: var(--background-color);
-    border: 2px solid var(--border-color);
-    width: 90%;
-    max-width: 250px;
-    display: flex;
-    border-radius: 10px;
-    padding: 10px;
+  margin: auto;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  width: 90%;
+  max-width: 250px;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 200ms all ease-in-out;
 }
 
-.input-container input {
-    font-family: 'Poppins', sans-serif;
-    background: transparent;
-    color: var(--text-color);
-    outline: none;
-    width: 80%;
-    margin-left: 10px;
-    border: none;
+.input {
+  font-family: 'Poppins', sans-serif;
+  background: transparent;
+  color: var(--text-color);
+  outline: none;
+  width: 80%;
+  margin-left: 10px;
+  border: none;
+}
+
+.input-container:focus-within {
+  border: 2px solid var(--hover-color);
 }
 
 .bar {
-    background-color: var(--border-color);
-    height: 300px;
-    width: 2px;
-    margin-left: 50px;
-    margin-right: 50px;
+  background-color: var(--border-color);
+  height: 300px;
+  width: 2px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .movies-container {
@@ -54,21 +59,27 @@
 }
 
 .home-message {
-    min-width: 200px;
-    width: 55%;
-    font-size: 1.5rem;
-  }
+  min-width: 200px;
+  width: 55%;
+  font-size: 1.5rem;
+}
+
+.error-input {
+  border: 2px solid var(--error-color) !important;
+}
   
-  h1 {
-    margin: 0;
-  }
+h1 {
+  margin: 0;
+}
+
+p {
+  color: var(--subtext-color);
+  margin: 10px auto;
+}
+
+span {
+  color: var(--specialtext-color);
+  font-weight: bold;
+}
+
   
-  p {
-    color: var(--subtext-color);
-    margin: 10px auto;
-  }
-  
-  span {
-    color: var(--specialtext-color);
-    font-weight: bold;
-  }

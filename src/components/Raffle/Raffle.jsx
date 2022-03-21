@@ -13,13 +13,38 @@ const Raffle = () => {
     const [searchTerm, setSearchTerm] = useState('')
     const [nameMovie, setNameMovie] = useState([])
     const [raffledData, setRaffledData] = useState([])
+    
+
+    const handleOnKeyDown = (e) => {
+        const inputContainer = document.querySelector('.input-container')
+        const pattern = /[a-zA-Z0-9]/
+
+        if (!pattern.test(e.target.value)) {
+            inputContainer.classList.add('error-input')
+            setSearchTerm('')
+        } else {
+            inputContainer.classList.remove('error-input')
+            if (e.key === 13 || e.key == 'Enter') {
+                handleOnClick()
+            }
+        }
+    }
 
     const handleOnClick = () => {
-        requestApi(searchTerm).then(value => {
-            setDataMovie([...dataMovie, value.results[0]])
-        })
-        setNameMovie([...nameMovie, searchTerm])
-        setSearchTerm('')
+        raffledData.length = 0
+        addSpriteMovie()
+    }
+
+    const addSpriteMovie = () => {
+        if (searchTerm.length != 0) {
+            requestApi(searchTerm).then(value => {
+                if (dataMovie.length <= 9) {
+                    setDataMovie([...dataMovie, value.results[0]])
+                }
+            })
+            setNameMovie([...nameMovie, searchTerm])
+            setSearchTerm('')
+        }
     }
 
     const handleRaffledMovie = () => {
@@ -29,11 +54,13 @@ const Raffle = () => {
     const chooseRaffledMovie = () => {
         const luckyNumber = Math.floor(Math.random() * (nameMovie.length))
         requestApi(nameMovie[luckyNumber]).then(value => {
-            setRaffledData(value.results[0])
+            if (nameMovie.length != 0 && nameMovie.length >= 2) {
+                dataMovie.length = 0
+                setRaffledData(value.results[0])
+                nameMovie.length = 0
+            }
         })
     }
-
-    console.log(raffledData)
 
     return (
         <div className="raffle-content">
@@ -47,7 +74,7 @@ const Raffle = () => {
                     <p>Add movies or tv shows</p>
                     <div className='input-container'>
                         <Button component='button' className='add-button' onClick={handleOnClick}><RiAddFill /></Button>
-                        <input type="text" name='search' placeholder='eg. Spider Man' onChange={e => (setSearchTerm(e.target.value))} value={searchTerm}/>
+                        <input type="text" name='search' placeholder='eg. Spider Man' onChange={e => (setSearchTerm(e.target.value))} value={searchTerm} onKeyDown={handleOnKeyDown} maxLength='40' className='input' title='just use letters and numbers!'/>
                     </div>
                     <Button component='button' className='raffle-button' onClick={handleRaffledMovie}>Raffle now</Button>
                 </div>
