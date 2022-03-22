@@ -5,6 +5,7 @@ import App from './App'
 import './styles/settings/colors.css'
 import './styles/settings/responsive.css'
 import './styles/settings/animations.css'
+import './styles/settings/notification.css'
 
 ReactDOM.render(
   <React.StrictMode>

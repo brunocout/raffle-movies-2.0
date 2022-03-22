@@ -8,7 +8,7 @@ const RaffledMovie = ({ data, img_url }) => {
     return (
         <div className='raffled-container'>
             <div className="raffled-sprite">
-                <img src={img_url + data.poster_path} alt="err" />
+                <img src={img_url + data.poster_path}/>
             </div>
             <div className='raffled-info'>
                 <h1 className='title'>{data.title}</h1> 

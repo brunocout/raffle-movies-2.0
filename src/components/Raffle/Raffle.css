@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  padding: 50px;
+  padding: 5%;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -13,8 +13,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 10px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .input-container {
@@ -23,20 +22,12 @@
   border: 2px solid var(--border-color);
   width: 90%;
   max-width: 250px;
+  max-height: 25px;
+  height: 100%;
   display: flex;
   border-radius: 10px;
   padding: 10px;
   transition: 200ms all ease-in-out;
-}
-
-.input {
-  font-family: 'Poppins', sans-serif;
-  background: transparent;
-  color: var(--text-color);
-  outline: none;
-  width: 80%;
-  margin-left: 10px;
-  border: none;
 }
 
 .input-container:focus-within {

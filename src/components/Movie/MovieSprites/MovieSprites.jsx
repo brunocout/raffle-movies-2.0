@@ -4,7 +4,7 @@ const MovieSprite = ({ data }) => {
 
     return (
         <div className="movies-sprites">
-            <img src={data} alt="err" />
+            <img src={data} />
         </div>
     );
 }

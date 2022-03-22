@@ -1,0 +1,16 @@
+.home {
+    height: 100vh;
+    display: flex;
+}
+
+.main {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.home-banner {
+    padding-right: 150px;
+}
+  
+  
