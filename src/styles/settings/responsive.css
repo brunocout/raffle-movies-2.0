@@ -3,10 +3,6 @@
   html {
     font-size: 50%;
   }
-
-  .home-banner img {
-    width: 200px;
-  }
   
   .raffle {
     width: 95%;
@@ -64,8 +60,8 @@
     font-size: 2rem;
   }
 
-  .home-banner {
-    display: none;
+  .home-message {
+    text-align: center;
   }
 
   html {

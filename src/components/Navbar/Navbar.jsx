@@ -7,7 +7,9 @@ const Navbar = () => {
         <nav className="nav">
             <div className='navbar container'>
                 <div className='logo'>
-                    <Button href="/"><img src="../../../assets/images/logo.png"/></Button>
+                    <Button href="/">
+                        <img src="src/assets/images/logo.png"/>
+                    </Button>
                 </div>
                 <div className="menu-container">
                     <ul className='menu'>

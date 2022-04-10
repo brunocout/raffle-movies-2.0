@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--grey-color);
-  background-image: url(/assets/images/Background.png);
+  background-image: url(src/assets/images/Background.png);
   background-size: 100%;
   background-position: 50% -160px;
   background-repeat: repeat-y;

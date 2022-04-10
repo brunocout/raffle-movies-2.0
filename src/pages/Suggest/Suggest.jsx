@@ -10,7 +10,7 @@ const Suggest = () => {
                 <Form/>
             </div> 
             <div className='suggest-banner'>
-                <img src="../../assets/images/email-banner.png" alt="" />
+                <img src="src/assets/images/email-banner.png"/>
             </div>
         </main>
      );
