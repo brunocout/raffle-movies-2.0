@@ -5,8 +5,8 @@ import Suggest from "./pages/Suggest/Suggest";
 const MainRoutes = () => {
     return ( 
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/suggest" element={<Suggest/>}/>
+            <Route path="/raffle-movies-website/" element={<Home/>}/>
+            <Route path="/raffle-movies-website/suggest" element={<Suggest/>}/>
         </Routes>
      );
 }
