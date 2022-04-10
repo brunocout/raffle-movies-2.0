@@ -57,3 +57,16 @@
 .navlink:hover {
     color: var(--specialtext-color);
 }
+
+.start-button {
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+    color: var(--button-color);
+    font-size: 3.5rem;
+    transition: 200ms all ease-in-out;
+}
+
+.start-button:hover {
+    color: var(--hovertext-color);
+}

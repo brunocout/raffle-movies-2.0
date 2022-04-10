@@ -9,13 +9,13 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
 
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <Navbar />
         <Routes />
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   )
 }
 

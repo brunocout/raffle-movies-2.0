@@ -14,11 +14,13 @@ const Raffle = () => {
     const [searchTerm, setSearchTerm] = useState('')
     const [nameMovie, setNameMovie] = useState([])
     const [raffledData, setRaffledData] = useState([])
+    const [removedMovie, setRemovedMovie] = useState()
     const [response, setResponse] = useState({
         type: '',
         message: ''
     })
     
+    console.log(dataMovie)
 
     const handleOnKeyDown = (e) => {
         const inputContainer = document.querySelector('.input-container')
@@ -83,16 +85,17 @@ const Raffle = () => {
         })
     }
 
+    const removeFromSlot = (slot) => {
+        setRemovedMovie(dataMovie.splice(slot, 1))
+        nameMovie.splice(slot, 1)
+    }
+
     return (
-        <div className="raffle-content">
-            <div className='home-message'>
-                    <h1>Raffle Movies: What Should i Watch?</h1>
-                    <p>Based on a list of movies from 2 to 10, I, <span>Raffle Movies</span> will draw a suggestion for you, who are undecided on which movie or series to watch 😊</p>
-                </div> 
+        <div className="raffle-content"> 
             <div className="raffle">
                 <div className="raffle-container">
                     <h1>Choose the Movies</h1>
-                    <p>Add movies or tv shows</p>
+                    <p>Add movies</p>
                     <div className='input-container'>
                         <Button component='button' className='add-button' onClick={handleOnClick}><RiAddFill /></Button>
                         <Input type="text" name='search' placeholder='eg. Spider Man' onChange={e => (setSearchTerm(e.target.value))} value={searchTerm} onKeyDown={handleOnKeyDown} maxLength='40' className='raffle-input'/>
@@ -104,8 +107,8 @@ const Raffle = () => {
                 </div>
                 <div className="bar"></div>
                 {raffledData.length != 0 ? <RaffledMovie data={raffledData} img_url={API_IMG} /> : dataMovie.length != 0 ? <div className="movies-container">
-                    {dataMovie.map(item => <MovieSprites data={API_IMG + item.poster_path}/>)}
-                </div> : <p>Add movies to the list... Lets draw. 😉</p>
+                    {dataMovie.map(item => <MovieSprites data={API_IMG + item?.poster_path} indexOf={dataMovie.indexOf(item)} removeFromSlot={removeFromSlot}/>)}
+                </div> : <p>Add movies to the list... Lets raffle. 😉</p>
                 }
             </div>
         </div>

@@ -16,6 +16,7 @@ body {
   background-position: 50% -160px;
   background-repeat: repeat-y;
   font-size: 1.6rem;
+  height: 100vh;
 }
 
 code {

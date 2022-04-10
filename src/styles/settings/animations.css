@@ -1,9 +1,10 @@
-.movies-container img {
-    animation: fade 1s;
+.movies-sprites {
+    animation: fade 250ms ease-in-out;
+
 }
 
 .raffled-container {
-    animation: fade 1s;
+    animation: fade 250ms ease-in-out;
 }
 
 @keyframes fade {
@@ -13,5 +14,16 @@
 
     100% {
         opacity: 1;
+    }
+    
+}
+
+@keyframes toTop {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
     }
 }
