@@ -8,10 +8,6 @@
     width: 95%;
   }
 
-  .raffled-sprite img {
-    width: 150px;
-  }
-
   .raffled-info {
     margin-left: 40px;
     font-size: 1rem;
@@ -46,15 +42,11 @@
 
 }
 
-@media (max-height: 660px) {
-
-  .raffled-container {
-    width: 75%;
-  }
-
-}
-
 @media (max-width: 990px) {
+
+  html {
+    font-size: 25%;
+  }
 
   .form-container {
     font-size: 2rem;
@@ -62,10 +54,6 @@
 
   .home-message {
     text-align: center;
-  }
-
-  html {
-    font-size: 25%;
   }
 
   .suggest-banner {
@@ -83,15 +71,10 @@
     align-items: center;
     flex-direction: column;
   }
-  
-  .raffle {
-    flex-direction: column;
-    padding: 10%;
-    width: 220px;
-  }
 
   .raffle-container {
     font-size: 2rem;
+    width: 70%;
   }
 
   .raffle-button {
@@ -102,7 +85,7 @@
     font-size: 2rem;
   }
 
-  .nav {
+  .nav button {
     font-size: 2rem;
   }
 
@@ -111,8 +94,8 @@
   }
 
   .bar {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     height: 2px;
     width: 250px;
   }
@@ -122,23 +105,26 @@
   }
 
   .raffled-sprite img {
-    width: 100%;
+    width: 50%;
   }
 
   .raffled-info {
-    margin: 0;
+    margin: 10px auto;
     font-size: 1.2rem;
     width: 100%;
   }
 
   .details {
     font-size: 2rem;
-    width: 50px;
-    border-radius: 3px;
+    width: 30px;
   }
 
   .ri-line {
     font-size: 2.3rem;
+  }
+
+  .movies-sprites {
+    width: 55px;
   }
 
 }

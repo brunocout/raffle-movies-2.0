@@ -19,8 +19,6 @@ const Raffle = () => {
         type: '',
         message: ''
     })
-    
-    console.log(dataMovie)
 
     const handleOnKeyDown = (e) => {
         const inputContainer = document.querySelector('.input-container')
@@ -92,7 +90,6 @@ const Raffle = () => {
 
     return (
         <div className="raffle-content"> 
-            <div className="raffle">
                 <div className="raffle-container">
                     <h1>Choose the Movies</h1>
                     <p>Add movies</p>
@@ -111,7 +108,6 @@ const Raffle = () => {
                 </div> : <p>Add movies to the list... Lets raffle. 😉</p>
                 }
             </div>
-        </div>
      );
 }
  
