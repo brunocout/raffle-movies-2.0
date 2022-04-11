@@ -19,9 +19,23 @@
 
 .raffled-info {
     margin: auto;
+    
     max-width: 200px;
     width: 100%;
-    font-size: .9rem;
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.overview {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 1.2rem;
 }
 
 .raffled-details {

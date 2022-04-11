@@ -12,9 +12,10 @@
 }
 
 .home-message {
-    margin: auto;
+    margin-left: 5px;
     min-width: 200px;
-    width: 85%;
+    max-width: 850px;
+    width: 100%;
     font-size: 1.5rem;
 }
   
