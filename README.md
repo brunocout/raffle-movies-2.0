@@ -2,9 +2,13 @@
     <img width="250" src="./src/assets/toreadme/logo-readme.png">
 </div>
 
+<p align="center">
+  🚧 <img src="https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=for-the-badge"/> 🚧  
+</p>
+
 ##
 
-<p align="center">This application was created based on the challenge of ibti-solutions, the challenge is to create a team of pokemons, bringing data from pokeApi and creating and adding to the database.</p>
+<p align="center">This application consists of raffling a movie based on a list from 2 to 10.</p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img src="./src/assets/toreadme/gif.gif" width="800px">
@@ -16,7 +20,7 @@
 
 Access the demo version of the website here:
 
-[![Pokemon Team Builder](https://img.shields.io/badge/-CLICK%20HERE-%23264d6a?style=for-the-badge)](https://brunocout.github.io/code-challenger--ibti-solutions/)
+[![Pokemon Team Builder](https://img.shields.io/badge/-CLICK%20HERE-%23264d6a?style=for-the-badge)](https://brunocout.github.io/raffle-movies-website/)
 
 ## ✨ Features
 - [x] Create Teams
@@ -86,5 +90,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Made w/ 💙 by Bruno Coutinho!
 
-[![Linkedin Badge](https://img.shields.io/badge/-brunocout-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunocout/)](https://www.linkedin.com/in/brunocout/) 
-[![Gmail Badge](https://img.shields.io/badge/-iambrunocout@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:iambrunocout@gmail.com)](mailto:iambrunocout@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-brunocout-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunocout/)](https://www.linkedin.com/in/brunocout/) 
+[![Gmail Badge](https://img.shields.io/badge/-iambrunocout@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:iambrunocout@gmail.com)](mailto:iambrunocout@gmail.com)
