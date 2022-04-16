@@ -98,4 +98,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Made w/ 💙 by Bruno Coutinho!
 
 [![Linkedin Badge](https://img.shields.io/badge/-brunocout-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunocout/)](https://www.linkedin.com/in/brunocout/) 
-[![Gmail Badge](https://img.shields.io/badge/-iambrunocout@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:iambrunocout@gmail.com)](mailto:iambrunocout@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/iambrunocout@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:iambrunocout@gmail.com)](mailto:iambrunocout@gmail.com)
