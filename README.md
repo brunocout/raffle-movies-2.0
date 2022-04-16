@@ -31,8 +31,21 @@ The application layout:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img src="./src/assets/toreadme/screen1.png" width="400px">
-  <img src="./src/assets/toreadme/screen2.png" width="400px">
+  <img src="./src/assets/toreadme/wscreen1.png" width="200px">
+  <img src="./src/assets/toreadme/wscreen2.png" width="200px">
+  <img src="./src/assets/toreadme/wscreen3.png" width="200px">
+  <img src="./src/assets/toreadme/wscreen4.png" width="200px">
+  <img src="./src/assets/toreadme/wscreen5.png" width="200px">
+</p>
+
+### Mobile
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img src="./src/assets/toreadme/mscreen1.png" width="200px">
+  <img src="./src/assets/toreadme/mscreen2.png" width="200px">
+  <img src="./src/assets/toreadme/mscreen3.png" width="200px">
+  <img src="./src/assets/toreadme/mscreen4.png" width="200px">
+  <img src="./src/assets/toreadme/mscreen5.png" width="200px">
 </p>
 
 ### Gif
@@ -53,7 +66,7 @@ The following tools are being used in building the project:
 
 ## 🚀 Getting Started
 
-First, run the development aplication:
+First, run the development application:
 
 ```bash
 npm run dev
