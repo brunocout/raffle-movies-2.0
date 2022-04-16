@@ -53,7 +53,7 @@ The following tools are being used in building the project:
 
 ## 🚀 Getting Started
 
-First, run the development server:
+First, run the development aplication:
 
 ```bash
 npm run dev
