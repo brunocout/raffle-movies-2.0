@@ -7,7 +7,7 @@
 <p align="center">This application was created based on the challenge of ibti-solutions, the challenge is to create a team of pokemons, bringing data from pokeApi and creating and adding to the database.</p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img src="./src/assets/toreadme/wscreen.png" width="800px">
+  <img src="./src/assets/toreadme/wscreen1.png" width="800px">
 </p>
 
 [ English ](./README.md)  |  [ Português ](./README-br.md)
