@@ -31,11 +31,11 @@ The application layout:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img src="./src/assets/toreadme/wscreen1.png" width="450px">
-  <img src="./src/assets/toreadme/wscreen2.png" width="450px">
-  <img src="./src/assets/toreadme/wscreen3.png" width="450px">
-  <img src="./src/assets/toreadme/wscreen4.png" width="450px">
-  <img src="./src/assets/toreadme/wscreen5.png" width="800px">
+  <img src="./src/assets/toreadme/wscreen1.png" width="800px">
+  <img src="./src/assets/toreadme/wscreen2.png" width="400px">
+  <img src="./src/assets/toreadme/wscreen3.png" width="400px">
+  <img src="./src/assets/toreadme/wscreen4.png" width="400px">
+  <img src="./src/assets/toreadme/wscreen5.png" width="400px">
 </p>
 
 ### Mobile
