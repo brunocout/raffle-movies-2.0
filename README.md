@@ -5,12 +5,12 @@
 <br>
 
 <p align="center">
-  🚧 <img src="https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=for-the-badge"/> 🚧  
+  <img src="https://img.shields.io/badge/-%F0%9F%9A%A7%20IN%20PROGRESS%20%F0%9F%9A%A7-yellow?style=for-the-badge"/> 
 </p>
 
 ##
 
-<p align="center">This application consists of raffling a movie based on a list from 2 to 10.</p>
+<p align="center">Using the tmdb api, to bring in movie data, i developed a function to sort a movie based on a list of movies from 2 to 10.</p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img src="./src/assets/toreadme/gif.gif" width="800px">
@@ -25,10 +25,15 @@ Access the demo version of the website here:
 [![Pokemon Team Builder](https://img.shields.io/badge/-CLICK%20HERE-%23264d6a?style=for-the-badge)](https://brunocout.github.io/raffle-movies-website/)
 
 ## ✨ Features
-- [x] Create Teams
-- [x] Fetching Teams of Database
-- [x] UI Specs
-- [x] Infinite Scroll on Pokedex
+- [x] Layout Application
+- [x] Add and Remove
+- [x] Raffle Function
+- [x] Suggest Page
+- [ ] Loading Animations
+- [ ] Share Result
+- [ ] Backend and Connection with Database
+- [ ] Login System
+- [ ] Make a List of Movies to Watch 
 
 ## 🎨 Layout
 
