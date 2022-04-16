@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="250" src="./src/assets/images/logo.png">
+    <img width="250" src="./src/assets/toreadme/logo-readme.png">
 </div>
 
 ##
